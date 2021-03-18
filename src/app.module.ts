@@ -22,7 +22,9 @@ import { StudentModule } from './student/student.module';
       ]
     }),
     GraphQLModule.forRoot({
-      autoSchemaFile: true
+      autoSchemaFile: true,
+      introspection: true,
+      playground: true
     }),
     LessonModule,
     StudentModule,
