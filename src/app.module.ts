@@ -29,3 +29,17 @@ import { StudentModule } from './student/student.module';
   ],
 })
 export class AppModule {}
+
+
+/*
+// 배포 후에도 playground 가능하게 하려면
+@Module({
+  imports: [
+    GraphQLModule.forRoot({
+      introspection: true,
+      playground: true
+    }),
+  ],
+})
+
+*/
