@@ -23,6 +23,7 @@ export class LessonResolver {
 
   @Query(returns => [LessonType]) // graphQL 문법 주의!
   lessons(){
+    console.log('hello')
     return this.lessonService.getLessons();
   }
 
